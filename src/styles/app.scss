@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    color: rgb(82, 82, 82);
+}
+
+@import '../components/player/player.style';
+@import '../components/song/song.style';
