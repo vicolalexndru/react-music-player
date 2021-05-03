@@ -1,0 +1,22 @@
+.library-song{
+ margin-top: 10px;
+ background-color: salmon;
+ cursor: pointer;
+ background-color: white;
+ &:hover{
+    background-color: salmon;
+}
+.song-description{
+    padding-left: 1rem;
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 0.7rem;
+    }
+    
+}
+  
+}
