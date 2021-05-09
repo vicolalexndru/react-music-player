@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scrollbar-width: thin;
-    scrollbar-color: rgba(155,155,155,0.5) ;
+    scrollbar-color: rgba(155,155,155,0.5);
 }
 
 *::-webkit-scrollbar{
@@ -28,3 +28,4 @@ h1, h2, h3 {
 @import '../components/song/song.style';
 @import '../components/library/library.style';
 @import '../components/librarySong/librarySong.style';
+@import '../components/nav/nav.style';

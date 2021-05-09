@@ -7,8 +7,12 @@
     box-shadow: 2px 2px 50px rgb(204, 204, 204);
     overflow: scroll;
     background-color: white;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    opacity: 0;
     h2{
-        padding: 1rem 1rem 1rem 1rem;
+        padding: 1rem 1rem 1rem 2rem;
+        color: rgb(48, 48, 48);
     }
 }
 
@@ -18,11 +22,21 @@
     flex-direction: column;
     padding: 1rem 2rem 1rem 2rem;
     cursor: pointer;
+   
     img {
      width:40%;
     }
 
-    
-    
+    .selected{
+    background-color: rgb(201, 106, 245);
+    color: white;
+    }
+
+    .active-library{
+      transform: translateX(0%);
+      opacity: 1;
+     
+    }
+
 }
 

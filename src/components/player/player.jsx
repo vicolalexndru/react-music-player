@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import{faPlay, 
        faAngleLeft, 
@@ -34,8 +34,6 @@ const dragHandler = (e) => {
     audioRef.current.currentTime = e.target.value;
     setSongInfo({...songInfo, currentTime: parseInt(e.target.value)})
 }
-
-  
 
     return(
        <div className="player"> 
