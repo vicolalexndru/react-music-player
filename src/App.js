@@ -13,7 +13,6 @@ import Nav from './components/nav/Nav.jsx'
 import data from "./data";
 
 
-
 function App() {
   const [songs, setSongs] = useState(data());
   const [ currentSong, setCurrentSong] = useState(songs[1])
@@ -42,7 +41,7 @@ const audioRef = useRef(null);
         <Nav libraryStatus = {libraryStatus} setLibraryStatus ={setLibraryStatus}/>
         <Library libraryStatus = {libraryStatus} setSongs ={setSongs} isPlaying = {isPlaying}  audioRef = {audioRef} songInfo = {songInfo} setSongInfo = {setSongInfo} songs = {songs} setCurrentSong = {setCurrentSong}/>
         <Song currentSong = {currentSong} />
-        <Player audioRef = {audioRef} songInfo = {songInfo} setSongInfo = {setSongInfo} isPlaying = {isPlaying} setIsPlaying={setIsPlaying} currentSong = {currentSong}/>
+        <Player setSongs = {setSongs} songs = {songs} setCurrentSong = {setCurrentSong} audioRef = {audioRef} songInfo = {songInfo} setSongInfo = {setSongInfo} isPlaying = {isPlaying} setIsPlaying={setIsPlaying} currentSong = {currentSong}/>
         
         <audio onTimeUpdate = {timeUpdateHandler} ref={audioRef} src={currentSong.audio}></audio>
     </div>
